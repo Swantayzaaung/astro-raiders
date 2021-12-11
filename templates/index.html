@@ -7,16 +7,38 @@
 {% block main %}
     <div>
         <h1>Welcome to Danksite!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <hr>
-    <div>
-        <h1>Search for your favourite templates</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <hr>
-    <div>
-        <h1>Edit your own memes</h1>
-        <a href="/edit"><button>Go to editor</button></a>
+        <p>Danksite is a free, open source web application written in Flask that lets you search for meme 
+            templates and edit your own memes based on those.
+        </p>
+        <h1>Choose a starting point</h1>
+        <div>
+            <div class="splitbox">
+                <div class="splitbox-item">
+                    <h2>Search for a meme template</h2>
+                    <br>
+                    <input type="text" placeholder="Search..." autocomplete="off">
+                </div>
+                <div class="splitbox-item">
+                    <div class="caption-img">
+                        <img src="https://live.staticflickr.com/2583/3709203268_1f8afc8392_b.jpg" alt="A man holding up a magnifying glass in front of him">
+                        Credit: CC Search (search.creativecommons.org)
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="splitbox">
+                <div class="splitbox-item">
+                    <h2>Or upload your own</h2>
+                    <br>
+                    <input type="submit" value="Upload File">
+                </div>
+                <div class="splitbox-item">
+                    <div class="caption-img">
+                        <img src="https://static.wikia.nocookie.net/among-us-wiki/images/9/9d/Upload_Data.png/revision/latest?cb=20210423220337" alt="An upload screen from the game Among Us">
+                        Credit: Among Us Fandom Wiki
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}

@@ -1,9 +1,17 @@
+/* Essentials */
 nav .navbar-brand
 {
     /* size for brand */
     font-size: xx-large;
 }
 
+#logo {
+    color:#e5e9f0;
+}
+
+body {
+    background-color: #20232b;
+}
 main .form-control
 {
     /* Center form controls */
@@ -15,21 +23,55 @@ main .form-control
 
 main
 {
+    /* Disable padding */
+
     /* Scroll horizontally as needed */
     overflow-x: auto;
 
     /* Center contents */
     text-align: center;
+    
+    /* Colors */
+    background-color:#2e3440;
+    color: rgba(236, 239, 244, 0.75);
 }
 
 main img
 {
     /* Constrain images on small screens */
     max-width: 100%;
-    border: #3b4252 2px solid;
 }
 
-/* My own CSS */
-.navbar-dark {
-    background-color:#2e3440;
+.container {
+    padding: 0;
+}
+
+main div {
+    padding: 1em;
+}
+
+.navbar-dark, footer {
+    background-color:#242933;
+}
+
+.div-alt {
+    background-color:#3f4755;
+}
+
+/* Index.html */
+.splitbox {
+    background-color: #373f4d;
+    border-radius: 10px;
+}
+
+/* Media queries */
+/* Index.html */
+@media screen and (min-width: 768px) {
+    .splitbox {
+        display:flex;
+        align-items: center;
+    }
+    .splitbox-item {
+        flex:1;
+    }
 }
