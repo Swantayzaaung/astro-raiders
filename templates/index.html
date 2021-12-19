@@ -10,13 +10,19 @@
         <p>Danksite is a free, open source web application written in Flask that lets you search for meme 
             templates and edit your own memes based on those.
         </p>
+    </div>
+    <div>
         <h1>Choose a starting point</h1>
         <div>
             <div class="splitbox">
                 <div class="splitbox-item">
                     <h2>Search for a meme template</h2>
                     <br>
-                    <input type="text" placeholder="Search..." autocomplete="off">
+                    <p>We've got plenty of meme templates to choose from. Click on one of them to start editing.</p>
+                    <br>
+                    <form method="get" action="/meme_templates">
+                        <input name="q" type="search" name="keyword" placeholder="Search..." autofocus autocomplete="off">
+                    </form>
                 </div>
                 <div class="splitbox-item">
                     <div class="caption-img">
@@ -30,7 +36,13 @@
                 <div class="splitbox-item">
                     <h2>Or upload your own</h2>
                     <br>
-                    <input type="submit" value="Upload File">
+                    <p>If you've got a meme-worthy image of your own and would rather use that instead of
+                        the provided templates, then go ahead.
+                    </p>
+                    <form action="/edit" enctype="multipart/form-data">
+                        <input type="file" accept=".bmp,.jpe,.jpeg,.jpg,.png" id="file-upload">
+                        <input type="submit" value="Upload">
+                    </form>
                 </div>
                 <div class="splitbox-item">
                     <div class="caption-img">
@@ -40,5 +52,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="grid-">
+        <h1>What we offer:</h1>
+        <
     </div>
 {% endblock %}
