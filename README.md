@@ -1,5 +1,5 @@
 # Astro Raider
-## A CS50 Final Project
+### A CS50 Final Project
 
 # Credits
 Special thanks to these people for helping me achieve this project. :)
