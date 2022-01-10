@@ -1,12 +1,12 @@
 Astro Raider
 -simple, vertical scrolling shmup game
 -will contain different kinds of powerups, weapons and enemies
--will contain weapon upgrade system for main cannon
+-will contain weapon upgrade system for main cannon and player shield
 
--main menu -> play, how to play, options, high scores, about
+-main menu -> play, help, options, high scores, about
 -about -> contain information about the game
 -options -> provide a list of customization for the gameplay
     -movement -> allow user to define their keys for left/right/up/down movement, enable/disable mouse movement
-    -shooting -> allow user to define their keys for shooting main/special weapons
+    -shooting -> allow user to define their keys for shooting main/special weapons, enable/disable mouse clicking
     -ships -> allow user to customize the ship colorscheme
-    -
+    -volume settings -> change music/sound effect volume
