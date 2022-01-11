@@ -1,7 +1,12 @@
 Astro Raider
 -simple, vertical scrolling shmup game
 -will contain different kinds of powerups, weapons and enemies
--will contain weapon upgrade system for main cannon and player shield
+-will contain weapon upgrade system for main cannon and player shield:
+    -player has zero shields at the start, completely vulnerable
+    -the main cannon damage starts at zero
+    -enemies can randomly drop shields, which the player can pick to upgrade (max 3 shields)
+    -if a player with shield hits an enemy or an enemy bullet, they will lose one shield
+    -enemies can also randomly drop cannon upgrades, which increase the damage (max 3)
 
 -main menu -> play, help, options, high scores, about
 -about -> contain information about the game
@@ -10,3 +15,4 @@ Astro Raider
     -shooting -> allow user to define their keys for shooting main/special weapons, enable/disable mouse clicking
     -ships -> allow user to customize the ship colorscheme
     -volume settings -> change music/sound effect volume
+-help -> 
