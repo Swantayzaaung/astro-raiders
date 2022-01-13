@@ -6,7 +6,9 @@ Astro Raider
     -the main cannon damage starts at zero
     -enemies can randomly drop shields, which the player can pick to upgrade (max 3 shields)
     -if a player with shield hits an enemy or an enemy bullet, they will lose one shield
-    -enemies can also randomly drop cannon upgrades, which increase the damage (max 3)
+    -enemies can also randomly drop cannon upgrades, which increase the damage (max 3), and special weapons, which make
+    fighting easier
+    -special weapons -> rocket, homing rocket
 
 -main menu -> play, help, options, high scores, about
 -about -> contain information about the game
@@ -15,4 +17,9 @@ Astro Raider
     -shooting -> allow user to define their keys for shooting main/special weapons, enable/disable mouse clicking
     -ships -> allow user to customize the ship colorscheme
     -volume settings -> change music/sound effect volume
--help -> 
+-help -> contain information about the game itself
+    -movement -> use a mouse or press arrow keys to move the ship
+    -shooting -> left click the mouse or press space
+    -special weapon -> right click the mouse or press shift
+    -drops -> enemies can randomly drop shield and cannon upgrades
+    -the score will automatically increase when the 
