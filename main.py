@@ -1,35 +1,55 @@
 #!/usr/bin/python3
 import pygame
-from random import randint, uniform
 
-# Window stuff
+from os.path import join, dirname
+from random import randint, uniform
+from helpers import constrain, wrap
+from ships import player_ship
+
+
+###########
+# Sprites #
+###########
+all_sprites = pygame.sprite.Group()
+player = player_ship()
+all_sprites.add(player)
+
+##############
+# Essentials #
+##############
+
+# Window size 
 WIDTH = 800
 HEIGHT = 600
 
-def main():
-    ##############
-    # Essentials #
-    ##############
-    pygame.init()
+# Assets 
+assets = join(dirname(__file__), 'assets')
 
-    # Create a window
-    window = pygame.display.set_mode((WIDTH, HEIGHT))
-    pygame.display.set_caption("Astro Raiders")
-    pygame.display.set_icon("assets/spaceship-blue.png")
+# Initialize pygame
+pygame.init()
 
+# Load some icons
+spaceship_blue = pygame.image.load(join(assets, 'spaceship-blue.png'))
 
-# Constrain values to fit within a boundary
-def constrain(val, min_val, max_val):
-    return min(max_val, max(min_val, val))
+# Create a window
+window = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Astro Raiders")
+pygame.display.set_icon(spaceship_blue)
 
+#############
+# Game loop #
+#############
+running = True
+while running:
+    # Events
+    for event in pygame.event.get():
+        # Close window
+        if event.type == pygame.QUIT:
+            running = False
+    
+    # Draw on the screen
+    window.fill((0, 0, 0))
+    all_sprites.draw(window)
 
-# Wrap values if they go over a boundary
-def wrap(val, min_val, max_val):
-    if val > max_val:
-        val = min_val
-    if val < min_val:
-        val = max_val
-    return val
-
-
-main()
+    # Refresh display
+    pygame.display.flip()
