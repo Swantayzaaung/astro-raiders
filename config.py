@@ -2,6 +2,8 @@
 You can change the settings via the game menus or 
 just edit this file itself. Here's a list of options:
 
+-FPS: change the frames per second of the game
+
 -volume: change the volume of the music and sounds,
 using a value of 1-100
 
@@ -16,17 +18,17 @@ http://www.pygame.org/docs/ref/key.html
 
 -mouse: enable or disable mouse usage for moving and
 shooting
-
 """
-
+FPS = 30
+ship_color = "green"
 high_scores = [0]
+WIDTH = 800
+HEIGHT = 600
 
 volume = {
     'music':100,
     'sfx':100
 }
-
-ship_color = "red"
 
 keybinds = {
     'left':"K_LEFT",
